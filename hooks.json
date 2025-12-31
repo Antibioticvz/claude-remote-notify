@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "PermissionRequest": [{"matcher": "*", "hooks": [{"type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/scripts/auto-approve.sh"}]}],
+    "Notification": [{"matcher": "permission_prompt", "hooks": [{"type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/scripts/notify.sh permission"}]}, {"matcher": "idle", "hooks": [{"type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/scripts/notify.sh idle"}]}],
+    "Stop": [{"matcher": "*", "hooks": [{"type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/scripts/notify.sh complete"}]}]
+  }
+}

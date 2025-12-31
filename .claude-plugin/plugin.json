@@ -1,0 +1,7 @@
+{
+  "name": "claude-remote-notify",
+  "version": "1.0.0",
+  "description": "Auto-approve permission requests and desktop notifications for Claude Code",
+  "license": "MIT",
+  "keywords": ["claude-code", "hooks", "auto-approve", "notifications"]
+}
